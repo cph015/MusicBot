@@ -1676,7 +1676,7 @@ class MusicBot(discord.Client):
 		async def cmd_clear(self, player, author):
         """
 
-		await cmd_clear(self, _player, author)
+		await cmd_clear(self, _player, author,)
 
         return await cmd_play(
             message,
