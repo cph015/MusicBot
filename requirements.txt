@@ -1,5 +1,5 @@
 pynacl
-py-cord[voice]
+py-cord
 pip
 yt-dlp
 colorlog
