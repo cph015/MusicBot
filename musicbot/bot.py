@@ -1658,7 +1658,7 @@ class MusicBot(discord.Client):
         )
 
     async def cmd_playnow(
-        self, message, _player, channel, author, permissions, leftover_args, song_url
+        self, message, _player, channel, author, permissions, leftover_args, song_url, voice_channel, param=""
     ):
         """
         Usage:
@@ -1674,9 +1674,14 @@ class MusicBot(discord.Client):
         equivalent of the song. Streaming from Spotify is not possible.
     
         async def cmd_clear(self, player, author):
+        async def cmd_skip(
+            self, player, channel, author, message, permissions, voice_channel, param=""
+    ):
         """
         
         await self.cmd_clear(_player, author)
+        
+        await self.cmd_skip(_player, channel, author, permissions, voice_channel, param="")
 
         return await self.cmd_play(
             message,
